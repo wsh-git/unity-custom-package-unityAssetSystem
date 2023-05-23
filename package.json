@@ -1,0 +1,20 @@
+{
+  "name": "com.wshunity.assetsystem",
+  "displayName": "Wsh Unity AssetSystem",
+  "version": "0.0.1",
+  "unity": "2017.2",
+  "keywords": [
+    "Asset Sysmte"
+  ],
+  "description": "This is a very base asset system.",
+  "repository": {
+    "url": "https://github.com/wsh-git/unity-custom-package-unityAssetSystem.git",
+    "type": "git",
+    "revision": "9d824e3aeca574022eff896b9c751097dadd0619"
+  },
+  "author": {
+    "name": "wshunity",
+    "email": "",
+    "url": ""
+  }
+}
