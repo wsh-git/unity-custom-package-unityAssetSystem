@@ -54,6 +54,26 @@ namespace Wsh.Asset {
             onComplete?.Invoke(textAsset);
         }
 
+        public void LoadMaterialAsync(string path, Action<Material> onComplete) {
+            Material material = (Material)Resources.Load(path);
+            onComplete?.Invoke(material);
+        }
+
+        public void LoadTextureAsync(string path, Action<Texture> onComplete) {
+            Texture texture = (Texture)Resources.Load(path);
+            onComplete?.Invoke(texture);
+        }
+
+        public void LoadTexture2DAsync(string path, Action<Texture2D> onComplete) {
+            Texture2D texture2D = Resources.Load<Texture2D>(path);
+            onComplete?.Invoke(texture2D);
+        }
+
+        public void LoadFontAsync(string path, Action<Font> onComplete) {
+            Font font = (Font)Resources.Load(path);
+            onComplete?.Invoke(font);
+        }
+
     }
 
 }

@@ -28,12 +28,28 @@ namespace Wsh.Asset {
             m_assetLoader.LoadScriptableData<T>(path, onComplete);
         }
 
+        public static void LoadMaterialAsync(string path, Action<Material> onComplete) {
+            m_assetLoader.LoadMaterialAsync(path, onComplete);
+        }
+
+        public static void LoadTextureAsync(string path, Action<Texture> onComplete) {
+            m_assetLoader.LoadTextureAsync(path, onComplete);
+        }
+
+        public static void LoadTexture2DAsync(string path, Action<Texture2D> onComplete) {
+            m_assetLoader.LoadTexture2DAsync(path, onComplete);
+        }
+
         public static void LoadSpriteAtlasAysnc(string path, Action<SpriteAtlas> onComplete) {
             m_assetLoader.LoadSpriteAtlasAysnc(path, onComplete);
         }
 
         public static void LoadTextAssetAsync(string path, Action<TextAsset> onComplete) {
             m_assetLoader.LoadTextAssetAsync(path, onComplete);
+        }
+
+        public static void LoadFontAsync(string path, Action<Font> onComplete) {
+            m_assetLoader.LoadFontAsync(path, onComplete);
         }
 
         public static void InstantiateAsync(string prefabPath, GameObject parent, Action<GameObject> onComplete) {
